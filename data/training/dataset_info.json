@@ -1,0 +1,26 @@
+{
+  "intent_train": {
+    "file_name": "intent_train.jsonl",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "nl2sql_train": {
+    "file_name": "nl2sql_train.jsonl",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "keyword_train": {
+    "file_name": "keyword_train.jsonl",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+name: data_copilot
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10 
+  # Core & Utils
+  - pydantic>=2.0.0
+  - pydantic-settings>=2.0.0
+  - loguru>=0.7.0
+  - python-dotenv>=1.0.0
+  
+  # Data Science & ML Core
+  - pandas>=2.0.0
+  - numpy>=1.24.0
+  - mlflow>=2.10.0
+  
+  # Deep Learning & Inference 
+  - pytorch>=2.0.0
+  - transformers>=4.36.0
+  
+  # API & Web Frameworks
+  - fastapi>=0.109.0
+  - python-multipart>=0.0.6
+  - streamlit>=1.30.0
+  
+  # HTTP & Testing
+  - requests>=2.31.0
+  - aiohttp>=3.9.0
+  - pytest>=7.4.0
+  - pytest-asyncio>=0.23.0
+  - httpx>=0.26.0
+  
+  # Dev Tools
+  - black>=24.0.0
+  - isort>=5.13.0
+  - mypy>=1.8.0
+  
+  - pip
+  - pip:
+      - nvitop
+      # LangChain
+      - langgraph>=0.0.40
+      - langchain>=0.1.0
+      - langchain-core>=0.1.0
+      
+      # Database & Specific Utils
+      - clickhouse-connect>=0.7.0
+      - pandasql>=0.7.3
+      - sseclient-py>=1.7.2
+      
+      # Model Client
+      - openai>=1.0.0
+      
+      # Server
+      - "uvicorn[standard]>=0.27.0"
+
+      # Training (LLaMA Factory)
+      - llama-factory=0.8.3
